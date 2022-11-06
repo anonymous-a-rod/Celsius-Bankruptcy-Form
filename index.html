@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <title>Celsius Bankruptcy Survey Form</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 id="title" class="text-center">Celsius Bankruptcy Survey Form</h1>
+      <p id="description" class="description text-center"><em>All answers will remain confidential. Thank you for taking
+          the time to help us move forward towards the most desirable outcome for all creditors.</em></p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input class="form-control" id="name" type="text" placeholder="Enter your name" required>
+        <br>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input class="form-control" id="email" type="email" placeholder="Enter your email" required>
+        <br>
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age <span class="clue">(optional)</span></label>
+        <input class="form-control" id="number" type="number" min="18" max="99" placeholder="Enter your age">
+      </div>
+      <div class="form-group">
+        <p>Are you an accredited investor?</p>
+        <label><input class="input-radio" type="radio" name="yes_no" value="yes">Yes
+        </label>
+        <label>
+          <input class="input-radio" type="radio" name="yes_no" value="no">No
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="investor_type">Which option best describes your Celsius account?</label>
+        <select id="dropdown">
+          <option>$0 - $1,000</option>
+          <option>$1,000 - $10,000</option>
+          <option>$10,000 - $50,000</option>
+          <option>$50,000 - $250,000</option>
+          <option>$250,000 - $1,000,000</option>
+          <option>$1,000,000 +</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Which cryptocurrencies do you hold on Celsius? <span class="clue">(Check all that apply)</span></p>
+        <label class="asset-labels"><input class="input-checkbox" type="checkbox" id="bitcoin" value="bitcoin">
+          Bitcoin</label>
+        <label class="asset-labels"><input class="input-checkbox" type="checkbox" id="cardano" value="cardano">
+          Cardano</label>
+        <label class="asset-labels"><input class="input-checkbox" type="checkbox" id="cel" value="cel">
+          CEL token</label>
+        <label class="asset-labels"><input class="input-checkbox" type="checkbox" id="ethereum" value="ethereum">
+          Ethereum</label>
+        <label class="asset-labels"><input class="input-checkbox" type="checkbox" id="other" value="matic">
+          Matic</label>
+        <label class="asset-labels"><input class="input-checkbox" type="checkbox" id="paxg" value="paxg">
+          PAX Gold</label>
+        <label class="asset-labels"><input class="input-checkbox" type="checkbox" id="stable" value="stable">
+          Stablecoins</label>
+        <label class="asset-labels"><input class="input-checkbox" type="checkbox" id="other" value="other">
+          Other</label>
+      </div>
+      <div class="form-group">
+        <label for="outcome">Which option do you prefer for Celsius moving forward?</label>
+        <select id="outcome">
+          <option>Chapter 7 Liquidations</option>
+          <option>Acquistion of assets/customers by competitor</option>
+          <option>Auction off illiquid assets and return remaining deposits</option>
+          <option>Reorganization under existing brand and management</option>
+          <option>Reorganization under new brand and management</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea class="input-textarea" name="comment"></textarea><br>
+        <button class="submit-button" id="submit" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
