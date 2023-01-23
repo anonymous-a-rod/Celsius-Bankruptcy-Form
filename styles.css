@@ -113,6 +113,8 @@ form {
 .form-group {
   margin: 0 auto 0 auto;
   padding: 4px;
+  overflow: hidden;
+  
 }
 
 .form-control {
